@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class UsersTableSeeder extends Seeder
 {
@@ -19,7 +20,7 @@ class UsersTableSeeder extends Seeder
                 'email' => 'admin@app.com',
                 'telefono' => '3144523889',
                 'role' => 'admin',
-                'password' => '123456',
+                'password' => Hash::make('123456'),
             ],
             [
                 'nombre' => 'Cliente Defecto',
@@ -28,7 +29,7 @@ class UsersTableSeeder extends Seeder
                 'email' => 'cliente@app.com',
                 'telefono' => '3214578123',
                 'role' => 'cliente',
-                'password' => '123456',
+                'password' => Hash::make('123456'),
             ]
         ]);
     }
