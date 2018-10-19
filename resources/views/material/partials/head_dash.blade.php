@@ -1,5 +1,5 @@
 <meta charset="utf-8" />
-        <title>Metronic Admin Theme #2 | Admin Dashboard 2</title>
+        <title>Deleyes | Dashboard </title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="Preview page of Metronic Admin Theme #2 for statistics, charts, recent events and reports" name="description" />
@@ -16,6 +16,7 @@
         <link href="../assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
         <link href="../assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
         <link href="../assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL STYLES -->
         <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />

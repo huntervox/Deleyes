@@ -126,7 +126,7 @@
                             <li class="dropdown dropdown-user">
                                 <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                                     <img alt="" class="img-circle" 
-                                    src="{{auth()->user()->foto ?: '/img/default.png'}}" />
+                                    src="/img/default.png" />
                                     <span class="username username-hide-on-mobile"> {{ Auth::user()->nombre }} </span>
                                     <i class="fa fa-angle-down"></i>
                                 </a>

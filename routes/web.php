@@ -19,3 +19,18 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/usuarios', 'AdminController@usuarios')->name('usuarios');
+
+Route::resource('usuarios', 'AdminController', [
+    'only' => ['usuarios', 'store', 'update', 'destroy'],
+]);
+
+Route::get('/empresa', 'ClienteController@empresa')->name('empresa');
+Route::get('/dataCredito', 'ClienteController@dataCredito')->name('dataCredito');
+Route::get('/Listar', 'ClienteController@listar')->name('listar');
+
+Route::post('/crearEmpresa', 'ClienteController@crearEmpresa')->name('crearEmpresa');
+Route::post('/crearCredito', 'ClienteController@crearCredito')->name('crearCredito');
+
+
+

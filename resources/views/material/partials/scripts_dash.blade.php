@@ -43,6 +43,7 @@
             <!-- END THEME GLOBAL SCRIPTS -->
             <!-- BEGIN PAGE LEVEL SCRIPTS -->
             <script src="../assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
+            <script src="../assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
             <!-- END PAGE LEVEL SCRIPTS -->
             <!-- BEGIN THEME LAYOUT SCRIPTS -->
             <script src="../assets/layouts/layout2/scripts/layout.min.js" type="text/javascript"></script>

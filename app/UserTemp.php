@@ -5,9 +5,9 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use App\Empresa;
-use App\Credito;
-class User extends Authenticatable
+use Illuminate\Database\Eloquent\Model;
+
+class UserTemp extends Authenticatable
 {
     use Notifiable;
 
@@ -17,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
 
-    protected $table = "tbl_usuarios";
+    protected $table = "tbl_usuariostemporal";
     protected $primaryKey = "PK_id";
 
     protected $fillable = [
@@ -32,12 +32,4 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-
-    public function empresas(){
-        return $this->HasMany(Empresa::class, 'FK_UsuarioId','PK_id');
-    }
-
-    public function creditos(){
-        return $this->HasMany(Credito::class, 'FK_UsuarioId','PK_id');
-    }
 }

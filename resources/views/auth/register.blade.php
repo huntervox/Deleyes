@@ -117,8 +117,8 @@
                         </div>
                             
                     </form>
-                    <div>
-                    </div>
-                    <br>
+                <div>
+            </div>
+        <br>
 
 @endsection
