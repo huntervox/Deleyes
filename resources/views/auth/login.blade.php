@@ -1,7 +1,7 @@
 @extends('layouts.login')
 @section('content')
     <h1>Deleyes Login</h1>
-    <p> Lorem ipsum dolor sit amet, coectetuer adipiscing elit sed diam nonummy et nibh euismod aliquam erat volutpat. Lorem ipsum dolor sit amet, coectetuer adipiscing. </p>
+    
     <form method="POST" action="{{ route('login') }}">
         @csrf
         <div class="alert alert-danger display-hide">
