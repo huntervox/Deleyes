@@ -1,7 +1,7 @@
-# Modulo De leyes
+# Módulo Deleyes
 
 
-## Instalacion 
+## Instalación 
 
 Desde cmd situado en la dirección de la carpeta "deleyes"
 * `composer install`
