@@ -18,7 +18,7 @@ class CreateServiciosEmpresaTable extends Migration
             $table->string('nombreEmpresa');
             $table->string('tipoEmpresa');
             $table->integer('numAccionistas');
-            $table->integer('capital');
+            $table->bigInteger('capital');
             $table->string('departamento');
             $table->string('ciudad');
             $table->integer('FK_UsuarioId')->unsigned();

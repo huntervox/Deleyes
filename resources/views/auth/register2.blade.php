@@ -1,7 +1,14 @@
-@extends('layouts.login')
+@extends('layouts.app')
+
 @section('content')
-            <h1>Registro de usuario</h1>
-            <br>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Register') }}</div>
+
+                <div class="card-body">
+
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -20,23 +27,23 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="tipoDocumento" class="col-md-4 col-form-label text-md-right">{{ __('Tipo y número de documento') }}</label>
+                            <label for="tipoDocumento" class="col-md-4 col-form-label text-md-right">{{ __('Tipo de Documento') }}</label>
 
-                            <div class="col-md-2">
+                            <div class="col-md-6">
+                                <input id="tipoDocumento" type="text" class="form-control{{ $errors->has('tipoDocumento') ? ' is-invalid' : '' }}" name="tipoDocumento" value="{{ old('tipoDocumento') }}" required autofocus>
 
-                                <select id="tipoDocumento"  class="bs-select form-control{{ $errors->has('tipoDocumento') ? ' is-invalid' : '' }}" name="tipoDocumento" value="{{ old('tipoDocumento') }}" required autofocus>
-                                    <option>TI</option>
-                                    <option>CC</option>
-                                    <option>CE</option>
-                                </select>
-                                
                                 @if ($errors->has('tipoDocumento'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('tipoDocumento') }}</strong>
                                     </span>
                                 @endif
                             </div>
-                            <div class="col-md-4">
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="documento" class="col-md-4 col-form-label text-md-right">{{ __('Documento') }}</label>
+
+                            <div class="col-md-6">
                                 <input id="documento" type="text" class="form-control{{ $errors->has('documento') ? ' is-invalid' : '' }}" name="documento" value="{{ old('documento') }}" required autofocus>
 
                                 @if ($errors->has('documento'))
@@ -104,21 +111,14 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Registrar') }}
+                                    {{ __('Register') }}
                                 </button>
                             </div>
                         </div>
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <a href="{{ route('login') }}" class="font-blue-dark">
-                                    Login
-                                </a>
-                            </div>
-                        </div>
-                            
                     </form>
-                    <div>
-                    </div>
-                    <br>
-
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

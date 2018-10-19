@@ -17,9 +17,9 @@ class CreateUsersTempTable extends Migration
             $table->increments('PK_id');
             $table->string('nombre');
             $table->enum('tipoDocumento', ['TI', 'CC', 'CE'])->default('CC');
-            $table->integer('documento');
+            $table->bigInteger('documento');
             $table->string('email')->unique();
-            $table->integer('telefono');
+            $table->bigInteger('telefono');
             $table->enum('role', ['admin', 'cliente'])->default('cliente');
             //$table->timestamp('email_verified_at')->nullable();
             $table->string('password');
